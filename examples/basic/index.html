@@ -20,18 +20,20 @@
       <a-box position="10 10 -8" height="20" color="#FF0000"></a-box>
       <a-box position="-10 10 16" height="20" color="#0000FF"></a-box>
       
-      <a-entity position="5 5 5">
-        <a-sphere position="5 5 5" mirror="resolution: 16; distance: 1000; interval: 250; repeat: true"
-                  animation="property: rotation; from: 0 0 0; to: 0 360 0; loop: true; dur: 5000; easing: linear"></a-sphere>
+      <a-entity position="0 0 0">
+        <a-sphere position="0 0 0" mirror="resolution: 16; distance: 1000; interval: 250; repeat: true"
+                  animation__rotation="property: rotation; from: 0 0 0; to: 0 360 0; loop: true; dur: 5000; easing: linear"
+                  animation__position="property: position; from: 0 1 -5; to: 5 1 -5; dir: alternate; loop: true; dur: 5000; easing: linear"></a-sphere>
       </a-entity>
 
-      <a-entity position="5 5 5">
-        <a-sphere position="5 5 5" color="#CA54B2"
-                  animation="property: rotation; from: 0 0 0; to: 360 0 360; loop: true; dur: 2000; easing: linear"></a-sphere>
+      <a-entity position="0 0 0">
+        <a-sphere position="0 0 0" color="#CA54B2"
+                  animation__rotation="property: rotation; from: 0 0 0; to: 360 0 360; loop: true; dur: 2000; easing: linear"
+                  animation__position="property: position; from: 0 1 -5; to: -5 1 -5; dir: alternate; loop: true; dur: 2000; easing: linear"></a-sphere>
       </a-entity>
 
       <a-obj-model src="#ball" mirror="repeat:true; resolution: 32;" position="3 2 0"
-                   animation="property: rotation; from: 0 0 0; to: 0 360 0; loop: true; dur: 10000; easing: linear">
+                   animation__rotation="property: rotation; from: 0 0 0; to: 0 360 0; loop: true; dur: 10000; easing: linear">
       </a-obj-model>
 
       <a-sphere mirror="resolution: 64; distance: 1000; interval: 200; repeat: true" segments-radius="24" segments-height="24" radius="1.5" position="0 2.5 4" ></a-sphere>
